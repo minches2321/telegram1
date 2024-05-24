@@ -1,38 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TapMaster</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #2C3E50;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        .button {
-            background-color: #3498DB;
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 8px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>TapMaster</h1>
-    <p>Зарабатывайте TapCoins, выполняя задачи и используя бустеры!</p>
-    <button class="button" onclick="tap()">👆 Тап</button>
-    <button class="button" onclick="showTasks()">📝 Задачи</button>
-    <button class="button" onclick="showBoosters()">⚡ Бустеры</button>
-    <button class="button" onclick="showStats()">📊 Статистика</button>
-    <button class="button" onclick="showReferrals()">🎁 Рефералы</button>
+    <div class="container">
+        <div class="header">
+            <h1>TapMaster</h1>
+            <p>Зарабатывайте TapCoins, выполняя задачи и используя бустеры!</p>
+        </div>
+        <div class="coin">
+            <img src="coin.png" alt="TapCoin">
+        </div>
+        <div class="buttons">
+            <button class="button" onclick="tap()">👆 Тап</button>
+            <button class="button" onclick="showTasks()">✅ Задачи</button>
+            <button class="button" onclick="showBoosters()">🔥 Бустеры</button>
+            <button class="button" onclick="showStats()">📊 Статистика</button>
+            <button class="button" onclick="showReferrals()">🐱 Рефералы</button>
+        </div>
+    </div>
+
     <script>
         function tap() {
             alert('Тап!');
